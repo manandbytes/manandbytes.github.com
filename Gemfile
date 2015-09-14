@@ -1,0 +1,6 @@
+gem 'libv8', '~> 3.11.8'
+gem 'therubyracer'
+gem 'github-pages'
+gem 'jekyll-feed'
+gem 'jekyll-sitemap'
+gem 'org-ruby'
