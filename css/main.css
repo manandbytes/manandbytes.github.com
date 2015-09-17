@@ -15,12 +15,14 @@ body {
 }
 
 #main {
-    border-bottom: solid lightgrey;
 }
 
 #footer {
+    margin-top: 1rem;
     text-align: right;
     font-size: 0.75rem;
+    color: darkgrey;
+    border-top: 1px solid lightgrey;
 }
 
 #footer ul li {
