@@ -7,3 +7,6 @@ gems:
   - jekyll-feed
   - jekyll-sitemap
   - org-ruby
+
+author :
+  name : Mykola Nikishov

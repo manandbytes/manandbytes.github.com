@@ -2,4 +2,4 @@
 * Published -- [Jekyll](http://jekyllrb.com/)
 * Hosted -- [Github Pages](https://pages.github.com/)
 
-&copy; 2015 Mykola Nikishov
+&copy; 2015 {{ site.author.name }}
