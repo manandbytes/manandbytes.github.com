@@ -11,7 +11,7 @@ body {
 #main, #footer {
     margin-left: auto;
     margin-right: auto;
-    width: 60rem;
+    max-width: 60rem;
 }
 
 #main {
