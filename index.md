@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Mykola Nikishov @ github
+title: manandbytes @ github
 ---
 ![me](/me.png)
 

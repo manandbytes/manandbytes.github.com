@@ -9,14 +9,19 @@
     <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
   </head>
   <body>
-    <div id="main">
-      {{ content }}
-    </div>
 
-    <div id="footer">
-        {% capture footer %}{% include footer.md%}{% endcapture %}
-        {{ footer | markdownify }}
-    </div>
+    <header>
+      <h1>{{ page.title }}</h1>
+    </header>
+
+    <main>
+      {{ content }}
+    </main>
+
+    <footer>
+      {% capture footer %}{% include footer.md%}{% endcapture %}
+      {{ footer | markdownify }}
+    </footer>
 
   </body>
 </html>
