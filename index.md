@@ -1,5 +1,4 @@
 ---
-layout: default
 title: manandbytes @ github
 ---
 ![me](/me.png)

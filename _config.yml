@@ -10,3 +10,10 @@ gems:
 
 author :
   name : Mykola Nikishov
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
