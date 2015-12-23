@@ -24,6 +24,21 @@ main, footer {
 main {
 }
 
+nav {
+    text-align: right;
+    font-size: 1.2rem;
+}
+
+nav ul li {
+    display: inline;
+    margin: 1rem;
+}
+
+nav ul a {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
 footer {
     margin-top: 1rem;
     text-align: right;
