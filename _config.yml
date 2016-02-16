@@ -2,7 +2,11 @@
 # https://help.github.com/articles/using-jekyll-with-pages/#configuration-overrides
 safe: true
 lsi: false
-whitelist: [ jekyll-paginate, jekyll-feed, jekyll-sitemap ]
+whitelist: [ jekyll-feed, jekyll-sitemap ]
+
+kramdown:
+  highlighter: rouge
+
 gems:
   - jekyll-feed
   - jekyll-sitemap
