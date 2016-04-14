@@ -8,6 +8,9 @@ gems:
   - jekyll-sitemap
   - org-ruby
 
+compress_html:
+  clippings: all
+
 author :
   name : Mykola Nikishov
 defaults:
