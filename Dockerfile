@@ -9,7 +9,7 @@ RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
 COPY ./Gemfile /usr/src/app/
-RUN bundler
+RUN bundler update
 
 # run jekyll
 EXPOSE 4000
