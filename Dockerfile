@@ -2,8 +2,7 @@ FROM manandbytes/debian:stable
 MAINTAINER Mykola Nikishov <mn@mn.com.ua>
 
 RUN apt-get update
-RUN apt-get -y install bundler
-RUN apt-get -y install zlib1g-dev # required to build nokogiri
+RUN apt-get -y --no-install-recommends install bundler build-essential ruby-dev zlib1g-dev # required to build nokogiri
 
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
