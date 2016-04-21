@@ -10,6 +10,8 @@ WORKDIR /usr/src/app
 COPY ./Gemfile /usr/src/app/
 RUN bundler update
 
+RUN apt-get clean
+
 # run jekyll
 EXPOSE 4000
 CMD jekyll serve -d /_site --watch --incremental --force_polling -H 0.0.0.0 -P 4000
