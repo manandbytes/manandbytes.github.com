@@ -26,4 +26,6 @@ RUN bundler install
 # run jekyll
 USER ${USER}
 EXPOSE 4000
-CMD jekyll serve --watch --profile --trace --incremental --force_polling -H 0.0.0.0 -P 4000
+
+ENTRYPOINT ["jekyll"]
+CMD ["server", "--port", "4000", "--host", "0.0.0.0", "--trace", "--incremental", "--profile", "--watch", "--drafts", "--verbose"]
