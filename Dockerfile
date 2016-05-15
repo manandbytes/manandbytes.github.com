@@ -1,6 +1,9 @@
 FROM manandbytes/debian:stable
 MAINTAINER Mykola Nikishov <mn@mn.com.ua>
 
+RUN echo 'Acquire::http { Proxy "http://172.17.42.1:3142"; };' >> /etc/apt/apt.conf.d/01proxy && \
+ echo 'Acquire::https { Proxy "http://172.17.42.1:3142"; };' >> /etc/apt/apt.conf.d/01proxy
+
 RUN apt-get update && apt-get -y --no-install-recommends install \
  bundler \
  g++ \
