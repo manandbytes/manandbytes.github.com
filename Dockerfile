@@ -12,14 +12,18 @@ RUN apt-get update && apt-get -y --no-install-recommends install \
  zlib1g-dev # required to build nokogiri \
  && apt-get clean
 
-RUN mkdir -p /usr/src/app
-WORKDIR /usr/src/app
+# to run as non-root user
+ENV USER jekyll
+ENV USERHOME /home/${USER}
+RUN useradd ${USER}
+RUN mkdir ${USERHOME} && chown -R ${USER}:jekyll ${USERHOME}
 
-COPY ./Gemfile /usr/src/app/
-RUN bundler update
+WORKDIR ${USERHOME}
 
-RUN apt-get clean
+ADD Gemfile ${USERHOME}/
+RUN bundler install
 
 # run jekyll
+USER ${USER}
 EXPOSE 4000
 CMD jekyll serve -d /_site --watch --incremental --force_polling -H 0.0.0.0 -P 4000
