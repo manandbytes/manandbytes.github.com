@@ -13,7 +13,7 @@ gems:
   - org-ruby
   - jekyll-paginate
 
-repository: manandbyes/manandbytes.github.io
+repository: manandbytes/manandbytes.github.com
 
 compress_html:
   clippings: all
