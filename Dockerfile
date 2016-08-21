@@ -7,6 +7,7 @@ RUN echo 'Acquire::http { Proxy "http://172.17.42.1:3142"; };' >> /etc/apt/apt.c
 RUN apt-get update && apt-get -y --no-install-recommends install \
  bundler \
  g++ \
+ git \
  make \
  ruby-dev \
  zlib1g-dev # required to build nokogiri \
