@@ -1,5 +1,5 @@
 ---
-title: manandbytes @ github
+title: man | and | bytes
 ---
 ![me](/me.png)
 
