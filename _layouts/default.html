@@ -23,7 +23,16 @@ layout: compress
     </nav>
 
     <main>
-      {{ content }}
+
+      <aside>
+	{% capture aside %}{% include aside.md %}{% endcapture %}
+	{{ aside | markdownify }}
+      </aside>
+
+      <article>
+        {{ content }}
+      </article>
+
     </main>
 
     <footer>
