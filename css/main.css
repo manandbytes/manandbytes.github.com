@@ -15,6 +15,14 @@ header {
     color: darkgrey;
 }
 
+main {
+    display: flex;
+}
+
+main > * {
+    margin: 0 2rem;
+}
+
 main, footer {
     border-top: .2rem dashed lightgrey;
 }
@@ -27,14 +35,6 @@ main, footer {
     margin: 0 auto;
     padding: 0 1rem;
     max-width: 60rem;
-}
-
-main > aside, main > article {
-    float: left;
-}
-
-main > article {
-    padding: 0 1rem;
 }
 
 nav {
