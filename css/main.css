@@ -1,11 +1,17 @@
 html {
-    font-family: sans-serif;
+    font-family: "PT Serif", Georgia, "Times New Roman", serif;
+}
+
+@media screen {
+    html {
+	font-size: 16px;
+	line-height: 1.25rem;
+    }
 }
 
 body {
     padding: 0;
     margin: 0;
-    font: normal 100% sans-serif;
 }
 
 header {
