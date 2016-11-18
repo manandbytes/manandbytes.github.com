@@ -1,6 +1,6 @@
 ![me](/me.png)
 
-* [@eclipse](https://projects.eclipse.org/user/1300)
+* [@eclipse](https://accounts.eclipse.org/users/mnikishov)
 * [@github](https://github.com/manandbytes)
 * [@bitbucket](https://bitbucket.org/manandbytes/)
 * [@openhub](https://www.openhub.net/accounts/manandbytes)
