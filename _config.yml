@@ -7,11 +7,28 @@ whitelist: [ jekyll-feed, jekyll-sitemap ]
 kramdown:
   highlighter: rouge
 
-gems:
-  - jekyll-feed
-  - jekyll-sitemap
-  - org-ruby
+# https://help.github.com/articles/configuring-jekyll-plugins/#default-plugins
+gems: # default
+  - jekyll-coffeescript
+  - jekyll-default-layout
+  - jekyll-gist
+  - jekyll-github-metadata
+  - jekyll-optional-front-matter
   - jekyll-paginate
+  - jekyll-readme-index
+  - jekyll-relative-links
+  - jekyll-titles-from-headings
+  # optional
+  - jekyll-feed
+  # - jekyll-redirect-from
+  # - jekyll-seo-tag
+  - jekyll-sitemap
+  # - jekyll-avatar
+  # - jemoji
+  # - jekyll-mentions
+  # - jekyll-include-cache
+  # extra
+  - org-ruby
 
 repository: manandbytes/manandbytes.github.com
 
