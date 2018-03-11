@@ -23,14 +23,12 @@ header {
 
 main {
     display: flex;
+    border-top: .1rem solid lightgrey;
+    border-bottom: .1rem solid lightgrey;
 }
 
 main > * {
     margin: 0 2rem;
-}
-
-main, footer {
-    border-top: .2rem dashed lightgrey;
 }
 
 header h1 {
