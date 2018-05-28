@@ -19,8 +19,9 @@ RUN apt-get update && apt-get -y --no-install-recommends install \
 # to run as non-root user
 ENV USER jekyll
 ENV USERHOME /home/${USER}
-RUN useradd ${USER}
-RUN mkdir ${USERHOME} && chown -R ${USER}:jekyll ${USERHOME}
+RUN useradd ${USER} \
+ && mkdir ${USERHOME} \
+ && chown -R ${USER}:jekyll ${USERHOME}
 
 WORKDIR ${USERHOME}
 
