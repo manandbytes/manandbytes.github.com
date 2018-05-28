@@ -30,6 +30,11 @@ gems: # default
   # extra
   - org-ruby
 
+exclude:
+  - Dockerfile
+  - docker-compose.yml
+  - Gemfile*
+
 repository: manandbytes/manandbytes.github.com
 
 compress_html:
