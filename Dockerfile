@@ -34,8 +34,6 @@ EXPOSE 4000
 
 # Set default locale
 ENV LC_ALL C.UTF-8
-ENV LANG en_US.UTF-8
-ENV LANGUAGE en_US.UTF-8
 
 ENTRYPOINT ["jekyll"]
 CMD ["server", "--port", "4000", "--host", "0.0.0.0", "--trace", "--incremental", "--profile", "--watch", "--drafts", "--verbose"]
