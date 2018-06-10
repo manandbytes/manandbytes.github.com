@@ -24,14 +24,14 @@ layout: compress
 
     <main>
 
+      <article>
+        {{ content }}
+      </article>
+
       <aside>
 	{% capture aside %}{% include aside.md %}{% endcapture %}
 	{{ aside | markdownify }}
       </aside>
-
-      <article>
-        {{ content }}
-      </article>
 
     </main>
 
