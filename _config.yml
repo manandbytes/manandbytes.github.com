@@ -8,7 +8,7 @@ kramdown:
   highlighter: rouge
 
 # https://help.github.com/articles/configuring-jekyll-plugins/#default-plugins
-gems: # default
+plugins: # default
   - jekyll-coffeescript
   - jekyll-default-layout
   - jekyll-gist
