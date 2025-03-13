@@ -2,4 +2,4 @@
 * Published -- [Jekyll](https://jekyllrb.com/)
 * Hosted -- [Github Pages](https://pages.github.com/)
 
-&copy; 2011-2023 {{ site.author.name }}
+&copy; 2011-2025 {{ site.author.name }}
